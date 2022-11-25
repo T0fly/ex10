@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>拖拽排序</title>
+		<style>
+			.column
+			{
+				height: 200px;
+				widows: 200px;
+				float: left;
+				border: 2px solid black;
+				background-color: green;
+				margin-right: 5px;
+				text-align: center;
+				cursor: move;
+			}
+			.column header
+			{
+				color: black;
+				text-shadow: #000 0 1px;
+				box-shadow: 5px;
+				padding: 5px;
+				background: red;
+				border-bottom: 1px solid black;
+			}
+			.column img
+			{
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="columns">
+			<div class="column" draggable="true"><header>one</header><img
+					src="img/big1.jpg"/></div>
+			<div class="column" draggable="true"><header>two</header><img
+					src="img/big2.jpg"/></div>
+			<div class="column" draggable="true"><header>three</header><img
+					src="img/big3.jpg"/></div>
+			<div class="column" draggable="true"><header>four</header><img
+					src="img/big4.jpg"/></div>
+			<div class="column" draggable="true"><header>five</header><img
+					src="img/big5.jpg"/></div>
+		</div>
+		<script type="text/javascript" src="js/one.js"></script>
+	</body>
+</html>
